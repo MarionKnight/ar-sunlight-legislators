@@ -4,14 +4,29 @@ class SunlightLegislatorsImporter
   def self.import(filename)
     csv = CSV.new(File.open(filename), :headers => true)
     csv.each do |row|
+      #DO WE NEED THE BELOW?
       row.each do |field, value|
         # TODO: begin
+        #Ryans code
+        case field
+        when 0
+          #put in title
+        when 1
+          #put in firstname
+        when 2
+          
         raise NotImplementedError, "TODO: figure out what to do with this row and do it!"
         # TODO: end
       end
     end
   end
 end
+
+0 ,1 ,2 ,3 ,6 ,7 ,8 , 9, 10, 11, 12, 13, 14, 21, 27
+"title","firstname","middlename","lastname" "party", "state", "district", "in_office", "gender","phone", "fax", "website", "webform", "twitter_id", "birthdate"
+
+
+SunlightLegislatorsImporter.import
 
 # IF YOU WANT TO HAVE THIS FILE RUN ON ITS OWN AND NOT BE IN THE RAKEFILE, UNCOMMENT THE BELOW
 # AND RUN THIS FILE FROM THE COMMAND LINE WITH THE PROPER ARGUMENT.

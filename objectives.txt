@@ -1,0 +1,29 @@
+
+State returns list of reps in house
+select * from house where state is __given__
+
+state returns 2 senators for state
+select * from senators where state is __given__
+
+political party list of senators of that party
+select * from senatos where party is __given__
+
+political party list of representatives in house 
+select * from house where party is __given__
+
+senator OR h.o.rep return name phone fax website, webform, party, gender birthday and twitterid
+
+
+senator OR h.o.rep return if in office
+
+
+
+0 ,1 ,2 ,3 ,6 ,7 ,8 , 9, 10, 11, 12, 13, 14, 21, 27
+"title","firstname","middlename","lastname" "party", "state", "district", "in_office", "gender","phone", "fax", "website", "webform", "twitter_id", "birthdate"
+
+"title" 0,"firstname" 1,"middlename" 2,"lastname"3,"name_suffix"4,"nickname"5,"party"6,"state"7,"district"8,"in_office"9,"gender"10,"phone"11,"fax"12,"website"13,"webform"14,"congress_office"15,"bioguide_id"16,"votesmart_id"17,"fec_id"18,"govtrack_id"19,"crp_id"20,"twitter_id"21,"congresspedia_url"22,"youtube_url"23,"facebook_id"24,"official_rss"25,"senate_class"26,"birthdate"27
+
+[]
+
+
+object.create(title => csv)
